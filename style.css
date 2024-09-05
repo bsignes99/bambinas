@@ -1,0 +1,304 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'fuente-bambinas';
+    src: url('./assets/fuentes/coral-blush-serif.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color:rgba(245, 209, 209, 0.416);
+}
+
+/**main div.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+div.colores{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color: #618a7b ;
+}
+div.colores1{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color: #8a6170;
+}
+div.colores2{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color:#d2b62a;
+}div.colores3{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color: #33cf51;
+}div.colores4{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color:#d4ab71
+    ;
+}div.colores5{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color: #ffeb8b
+    ;
+}div.colores6{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color: #68d980;
+}div.colores7{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color:#f9db4a;
+}
+div.colores8{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color:#670010    ;
+}
+div.colores9{
+    transform: translateY(20px) translate(15px);
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    background-color:#b5292a;
+}**/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: rgb(194, 146, 146);
+    gap: 10%;
+}
+
+.titulo{
+    font-size: 50px;
+    font-family: 'fuente-bambinas', sans-serif;   
+}
+
+.logo{
+    height: 110px;
+    width: 120px;
+    align-items: start;
+    margin-left: 1%; /*relacion 1% con flex*/
+    justify-content: center;
+
+}
+
+.nav{
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgb(155, 112, 112);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+ul.nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    align-items: end;
+    
+}
+
+
+.nav-list li a{
+   /* display: none;*/
+   text-decoration: none;
+   color: black;
+
+}
+
+.abrir-menu{
+    padding-right: 1rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.cerrar-menu{
+    display: block;
+    font-size: 1rem;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+
+.visor{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: space-between;
+        
+}
+
+.talles{
+    width: 150px;
+    height: 150px;
+    box-shadow: .1px .1px 5px .1px black;
+    border-radius: 180%;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.text{
+    font-family: sans-serif;
+    color:  rgb(9, 16, 38);
+    text-shadow: 1px 1px 1px white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 45%;
+}
+
+.temporadas{
+    background-image: url(./assets/img/preview.png);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 4%;
+    width: 1350px;
+    height: 500px;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-left: 4%;
+    margin-right: 4%;
+    justify-content: center; /*mueve tarjetas*/
+    margin-top: 3rem;
+}
+.tarjetas{
+    display: flex;
+
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*mueve los objetos*/
+    gap: 3px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 1px 1px 1px 1px rgb(180, 177, 177);
+    border-radius: 5px;
+    background-color: rgba(234, 211, 194, 0.605);
+    h1{
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 30px;
+    }
+    img{
+        display: flex;
+        width: 270px;
+        height: 280px;
+    }
+    
+}
+
+.colores{
+    display: flex;
+    gap: 10px;   
+}
+
+.circuloColor{
+    border: black;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px .1px black;
+    width: 20px;
+    height: 20px;
+}
+
+.btn{
+    color: rgba(31, 30, 30, 0.784);
+    width: 6rem;
+    height: 2rem;
+    font-size: 20px;
+    font-family: fantasy;
+    background-color: rgb(222, 188, 155);
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+ .btn:hover{
+    color: rgba(255, 255, 255, 0.778);
+    background-color: rgb(248, 188, 128);
+
+}
+
+
+.talleProductos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cajaTalle{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid rgb(179, 179, 179);
+    background-color: rgb(250, 207, 182);}
+
